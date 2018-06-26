@@ -1,0 +1,53 @@
+./psphoton << !
+iasp91.smo
+1                !assumed freq. (Hz), affects attenuation and scattering
+0.0               !assumed source depth (km)
+7                !radiate: (1) P,  (2) SH, (3) SV, (4) SH/SV, (5) P+S, (6) custom Es/Ep, (7) custom pmax
+0.07             !maximum takeoff p (custom pmax option 7 above only)
+10000            !number of ray parameters for tables (max=50000)
+0 0 0 0          !xwind1,xwind2,twind1,twind2 for ray info dump
+0                !0=normal, 1=force equal refl/trans
+3              !number of interface depths (to follow) (max=6)
+  0              !interface 1
+  2889           !interface 3 (iasp91 CMB)
+  5153.9         !interface 4 (iasp91 ICB)
+4              !number of scattering volumes (to follow) (max=6)
+  1              !min scat depth (km)
+  200            !max scat depth (km)
+  999999         !max scat range from source (km)
+  8.08 4.47      !reference P & S velocity for layer
+  0.8            !relative size of density perturbation (0.8 often assumed)
+  0.02           !rms perturbation
+  4.0            !scale length (km)
+    200            !min scat depth (km)
+    600            !max scat depth (km)
+    999999         !max scat range from source (km)
+    9.13 4.93      !reference P & S velocity for layer
+    0.8            !relative size of density perturbation (0.8 often assumed)
+    0.02           !rms perturbation
+    4.0            !scale length (km)
+      600            !min scat depth (km)
+      1700           !max scat depth (km)
+      999999         !max scat range from source (km)
+      11.734 6.504     !reference P & S velocity for layer (PREM at 1171 km)
+      0.8            !relative size of density perturbation (0.8 often assumed)
+      0.005          !rms perturbation
+      8.0            !scale length (km)
+  1700           !min scat depth (km)
+  2880           !max scat depth (km)
+  999999         !max scat range from source (km)
+  13.131 7.055     !reference P & S velocity for layer (PREM at 310 km)
+  0.8            !relative size of density perturbation (0.8 often assumed)
+  0.005          !rms perturbation
+  8.0            !scale length (km)
+0 999999       !min,max number of scattering events for output
+3              !number of Q layers (max=6)
+  0 220          !min,max depth of Q layer
+  227            !Qalpha
+    220 2889       !min,max depth of Q layer
+    1383           !Qalpha
+  5153.9 9999    !min,max depth of Q layer
+  360            !Qalpha (IC value from Joydeep's paper)
+50000          !write output at multiples of this number of rays
+0              !out.debug: 0=none, 1=full, 2=scat
+!
