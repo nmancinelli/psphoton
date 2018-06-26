@@ -27,4 +27,4 @@ For implementation examples, see:
 
 * Peng, Z., Koper, K. D., Vidale, J. E., Leyton, F., & Shearer, P. (2008). Inner‐core fine‐scale structure from scattered waves recorded by LASA. Journal of Geophysical Research: Solid Earth, 113(B9).
 
-Wang, W., & Shearer, P. M. (2017). Using direct and coda wave envelopes to resolve the scattering and intrinsic attenuation structure of Southern California. Journal of Geophysical Research: Solid Earth, 122(9), 7236-7251.
+* Wang, W., & Shearer, P. M. (2017). Using direct and coda wave envelopes to resolve the scattering and intrinsic attenuation structure of Southern California. Journal of Geophysical Research: Solid Earth, 122(9), 7236-7251.
